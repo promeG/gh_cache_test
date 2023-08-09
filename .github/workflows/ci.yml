@@ -1,0 +1,21 @@
+name: Build and Test
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  ci_test:
+    name: Check if Build should be done
+    runs-on: self-hosted
+    steps:
+      - name: Built Code Cache
+        uses: actions/cache@v3.3.1
+        with:
+          key: cache-key-1
+          path: 1.txt
+      - name: sleep 10m
+        run: sleep 10m
