@@ -15,7 +15,7 @@ jobs:
       - name: Built Code Cache
         uses: actions/cache@v3.3.1
         with:
-          key: cache-key-1
+          key: cache-key,-1
           path: 1.txt
-      - name: sleep 10m
-        run: sleep 10m
+      - name: sleep
+        run: sleep 10s
