@@ -12,6 +12,8 @@ jobs:
     name: Check if Build should be done
     runs-on: self-hosted
     steps:
+      - name: sleep
+        run: sleep 3m
       - name: Built Code Cache
         uses: actions/cache@v3.3.1
         with:
