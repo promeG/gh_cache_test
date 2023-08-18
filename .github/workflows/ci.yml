@@ -19,7 +19,7 @@ jobs:
         with:
           name: invaild/cachekey
           path: |
-            1.txt
+            ~/cachecontent
       # - name: Built Code Cache
       #   uses: actions/cache@v3.3.1
       #   with:
