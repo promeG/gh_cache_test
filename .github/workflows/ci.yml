@@ -13,7 +13,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: sleep
-        run: sleep 10s
+        run: sleep 5m
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
