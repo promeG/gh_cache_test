@@ -10,7 +10,7 @@ on:
 jobs:
   ci_test:
     name: Check if Build should be done
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: test
         env:
