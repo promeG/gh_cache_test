@@ -12,6 +12,10 @@ jobs:
     name: Check if Build should be done
     runs-on: self-hosted
     steps:
+      - name: test
+        env:
+          SLACK_BOT_TOKEN: 12344
+        uses: abinoda/slack-action@master
       - name: sleep
         run: sleep 5m
       - name: Archive production artifacts
